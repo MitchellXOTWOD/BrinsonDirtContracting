@@ -491,6 +491,18 @@ nav {
   clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
 }
 
+.contact-item a, .contact-item p {
+  color: var(--text);      /* Keeps it the warm white/cream text color */
+  text-decoration: none;   /* Strips away the blue link underline */
+  font-size: 1.05rem;
+  display: inline-block;
+}
+
+/* Controls exactly what happens when someone hovers over the text link */
+.contact-item a:hover { 
+  color: var(--text);      /* Stays regular text color instead of turning orange */           /* Makes the mouse cursor look like regular selectable text */
+}
+
 .contact-form {
   background: var(--bg-2);
   border: 1px solid var(--border);
