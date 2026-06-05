@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Brinson Dirt Contracting</title>
+  <meta name="description" content="Land clearing, grading, excavation, pond work, and driveways in Monroe, LA." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">
+      Brinson Dirt Contracting
+      <span>Monroe, Louisiana</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <span class="section-label">What We Offer</span>
+    <h1>Our Services</h1>
+    <p>Full-service dirt work for residential, commercial, and agricultural projects across Northeast Louisiana.</p>
+  </div>
+
+  <!-- SERVICES DETAIL -->
+  <section class="section" style="background: var(--bg);">
+    <div style="display: flex; flex-direction: column; gap: 4rem;">
+
+      <!-- Land Clearing -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;" class="service-detail">
+        <div>
+          <img src="images/ariel.jpg" alt="Land clearing service" style="width:100%; height:280px; object-fit:cover; filter: brightness(0.85) saturate(0.85); border-top: 3px solid var(--orange);" />
+        </div>
+        <div>
+          <h2>Land Clearing</h2>
+          <div class="divider"></div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Got overgrown land, thick brush, or trees that need to come down? We clear acreage of all sizes — from small lots to large tracts — using the right equipment to get it done efficiently.
+          </p>
+          <ul style="color: var(--text-muted); padding-left: 1.25rem; line-height: 2;">
+            <li>Brush and undergrowth removal</li>
+            <li>Tree felling and removal</li>
+            <li>Stump grinding</li>
+            <li>Debris haul-off</li>
+          </ul>
+          <div style="margin-top: 1.5rem;">
+            <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+
+      <hr style="border-color: var(--border);" />
+
+      <!-- Grading -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;" class="service-detail">
+        <div>
+          <h2>Grading &amp; Leveling</h2>
+          <div class="divider"></div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            A properly graded property protects your foundation, prevents flooding, and makes land usable. We grade for construction pads, yard drainage, building lots, and agricultural land.
+          </p>
+          <ul style="color: var(--text-muted); padding-left: 1.25rem; line-height: 2;">
+            <li>Yard grading and drainage</li>
+            <li>Building pad prep</li>
+            <li>Foundation grading</li>
+            <li>Agricultural land leveling</li>
+          </ul>
+          <div style="margin-top: 1.5rem;">
+            <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+          </div>
+        </div>
+        <div>
+          <img src="images/flat.jpg" alt="Grading and leveling service" style="width:100%; height:280px; object-fit:cover; filter: brightness(0.85) saturate(0.85); border-top: 3px solid var(--orange);" />
+        </div>
+      </div>
+
+      <hr style="border-color: var(--border);" />
+
+      <!-- Excavation -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;" class="service-detail">
+        <div>
+          <img src="images/excavation2.jpg" alt="Excavation service" style="width:100%; height:280px; object-fit:cover; filter: brightness(0.85) saturate(0.85); border-top: 3px solid var(--orange);" />
+        </div>
+        <div>
+          <h2>Excavation</h2>
+          <div class="divider"></div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Precision digging for whatever your project requires. We operate excavators and heavy equipment suited for jobs of all scales, from utility trenches to large building excavations.
+          </p>
+          <ul style="color: var(--text-muted); padding-left: 1.25rem; line-height: 2;">
+            <li>Foundation excavation</li>
+            <li>Utility and sewer trenching</li>
+            <li>Drainage ditch digging</li>
+            <li>Dirt hauling and fill</li>
+          </ul>
+          <div style="margin-top: 1.5rem;">
+            <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+
+      <hr style="border-color: var(--border);" />
+
+      <!-- Pond Work -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;" class="service-detail">
+        <div>
+          <h2>Pond &amp; Lake Work</h2>
+          <div class="divider"></div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Whether you want a new fishing pond on your property or need to clean out an existing one, we have the equipment to make it happen. We handle the digging, shaping, and compacting.
+          </p>
+          <ul style="color: var(--text-muted); padding-left: 1.25rem; line-height: 2;">
+            <li>New pond construction</li>
+            <li>Pond clean-out and dredging</li>
+            <li>Dam and levy work</li>
+            <li>Spillway installation</li>
+          </ul>
+          <div style="margin-top: 1.5rem;">
+            <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+          </div>
+        </div>
+        <div>
+          <img src="images/pond.jpg" alt="Pond and lake work" style="width:100%; height:280px; object-fit:cover; filter: brightness(0.85) saturate(0.85); border-top: 3px solid var(--orange);" />
+        </div>
+      </div>
+
+      <hr style="border-color: var(--border);" />
+
+      <!-- Driveway -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;" class="service-detail">
+        <div>
+          <img src="images/gravel.jpg" alt="Driveway work" style="width:100%; height:280px; object-fit:cover; filter: brightness(0.85) saturate(0.85); border-top: 3px solid var(--orange);" />
+        </div>
+        <div>
+          <h2>Driveway Work</h2>
+          <div class="divider"></div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            We build and repair driveways designed to handle Louisiana's weather and heavy use. From gravel to dirt drives, we prep the base right so it lasts.
+          </p>
+          <ul style="color: var(--text-muted); padding-left: 1.25rem; line-height: 2;">
+            <li>New driveway construction</li>
+            <li>Driveway repair and regrading</li>
+            <li>Gravel and rock driveways</li>
+            <li>Culvert installation</li>
+          </ul>
+          <div style="margin-top: 1.5rem;">
+            <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <div style="background: var(--orange); padding: 3rem clamp(1.5rem, 6vw, 8rem); text-align: center;">
+    <h2 style="color: #fff; margin-bottom: 0.75rem;">Ready to Start Your Project?</h2>
+    <p style="color: rgba(255,255,255,0.85); margin-bottom: 1.5rem;">Call us or send a message and we'll get back to you fast.</p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="tel:3183310573" class="btn" style="background:#fff; color:var(--orange); clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);">318-331-0573</a>
+      <a href="contact.html" class="btn" style="background:transparent; color:#fff; border: 2px solid #fff;">Send a Message</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom: 0.75rem; display: inline-flex;">
+          Brinson Dirt Contracting
+          <span>Monroe, Louisiana</span>
+        </a>
+        <p>Professional dirt work and land services serving Monroe and Northeast Louisiana.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>
+          Phone: <a href="tel:3183310573" style="color: var(--text-muted); text-decoration: none;">318-331-0573</a><br>
+          Email: <a href="mailto:brinsondirtcon@yahoo.com" style="color: var(--text-muted); text-decoration: none;">brinsondirtcon@yahoo.com</a><br>
+          Location: Monroe, Louisiana
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> Brinson Dirt Contracting &mdash; Monroe, LA. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <style>
+    @media (max-width: 768px) {
+      .service-detail { grid-template-columns: 1fr !important; }
+      .service-detail > div:first-child { order: 0 !important; }
+    }
+  </style>
+</body>
+</html>
