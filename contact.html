@@ -9,11 +9,9 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
     <a href="index.html" class="nav-logo">
       <img src="images/logo-black.jpeg" alt="Brinson Dirt Contracting Logo" class="logo-img" />
-      
       <div>
         Brinson Dirt Contracting
         <span>Monroe, Louisiana</span>
@@ -30,7 +28,6 @@
     </button>
   </nav>
 
-  <!-- MOBILE NAV -->
   <div class="mobile-nav" id="mobileNav">
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
@@ -38,18 +35,15 @@
     <a href="contact.html">Contact</a>
   </div>
 
-  <!-- PAGE HERO -->
   <div class="page-hero">
     <span class="section-label">Get In Touch</span>
     <h1>Contact Us</h1>
     <p>Let's talk about your next project. Drop us a line or give us a call for a free quote on your dirt work needs.</p>
   </div>
 
-  <!-- CONTACT CONTENT -->
   <section class="section" style="background: var(--bg);">
     <div class="contact-grid">
       
-      <!-- LEFT COLUMN: DIRECT CONTACT INFO -->
       <div class="contact-info-block">
         <div>
           <h2>Let's Move Some Dirt</h2>
@@ -81,25 +75,33 @@
         </div>
       </div>
 
-      <!-- RIGHT COLUMN: CONTACT FORM -->
       <div>
-        <!-- 
-          OPTION A (Current): Native email client submission.
-          OPTION B: To make it send seamlessly behind the scenes without opening an email app, 
-                    change the action attribute to a form service like: 
-                    action="https://formspree.io/f/YOUR_FORM_ID"
-        -->
-        <form class="contact-form" action="mailto:brinsondirtcon@yahoo.com" method="post" enctype="text/plain">
+        <form class="contact-form" action="https://formsubmit.co/slimmitch.mn@gmail.com" method="POST">
+          
+          <input type="hidden" name="_subject" value="New Dirt Work Estimate Request!">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://brinsondirtcon.pages.dev/index.html">
+          
           <h3>Send a Message</h3>
           
           <div class="form-group">
             <label for="name">Your Name</label>
-            <input type="text" id="name" name="Name" placeholder="John Doe" required />
+            <input type="text" id="name" name="Customer Name" placeholder="John Doe" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="Email Address" placeholder="johndoe@email.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="Phone Number" placeholder="318-555-0123" required />
           </div>
 
           <div class="form-group">
             <label for="message">Message / Project Details</label>
-            <textarea id="message" name="Message" placeholder="Tell us about the project site, acreage, or type of dirt work you need..." required></textarea>
+            <textarea id="message" name="Project Details" placeholder="Tell us about the project site, acreage, or type of dirt work you need..." required></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Submit Request</button>
@@ -110,7 +112,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-grid">
       <div class="footer-brand">
@@ -133,7 +134,7 @@
         <h4>Contact</h4>
         <p>
           Phone: <a href="tel:3183310573" style="color: var(--text-muted); text-decoration: none;">318-331-0573</a><br>
-          Email: <a href="mailto:slimmitch.mn@gmail.com" style="color: var(--text-muted); text-decoration: none;">brinsondirtcon@yahoo.com</a><br>
+          Email: <a href="mailto:brinsondirtcon@yahoo.com" style="color: var(--text-muted); text-decoration: none;">brinsondirtcon@yahoo.com</a><br>
           Location: Monroe, Louisiana
         </p>
       </div>
