@@ -32,107 +32,22 @@
     <a href="contact.html">Contact</a>
   </div>
 
-  <!-- PAGE HERO -->
   <div class="page-hero">
     <span class="section-label">Our Work</span>
     <h1>Project Gallery</h1>
     <p>Real jobs, real results. Browse photos from our land clearing, grading, excavation, pond, and driveway projects.</p>
   </div>
 
-  <!-- FILTER BUTTONS -->
-  <section class="section" style="background: var(--bg); padding-bottom: 0;">
-    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem;" id="filterBtns">
-      <button class="btn btn-primary filter-btn" data-filter="all">All Work</button>
-      <button class="btn btn-outline filter-btn" data-filter="clearing">Land Clearing</button>
-      <button class="btn btn-outline filter-btn" data-filter="grading">Grading</button>
-      <button class="btn btn-outline filter-btn" data-filter="excavation">Excavation</button>
-      <button class="btn btn-outline filter-btn" data-filter="pond">Pond Work</button>
-      <button class="btn btn-outline filter-btn" data-filter="driveway">Driveways</button>
-    </div>
-  </section>
-
-  <!-- GALLERY GRID -->
-  <section class="section" style="background: var(--bg); padding-top: 1.5rem;">
-    <div class="gallery-grid" id="galleryGrid">
-
-      <div class="gallery-item" data-category="clearing">
-        <img src="images/gallery-1.jpg" alt="Land clearing project" loading="lazy" />
-        <div class="overlay">View</div>
-      </div>
-
-      <div class="gallery-item" data-category="clearing">
-        <img src="images/gallery-2.jpg" alt="Brush removal and clearing" loading="lazy" />
-        <div class="overlay">View</div>
-      </div>
-
-      <div class="gallery-item" data-category="grading">
-        <img src="images/gallery-3.jpg" alt="Grading and leveling" loading="lazy" />
-        <div class="overlay">View</div>
-      </div>
-
-      <div class="gallery-item" data-category="excavation">
-        <img src="images/gallery-4.jpg" alt="Excavation project" loading="lazy" />
-        <div class="overlay">View</div>
-      </div>
-
-      <div class="gallery-item" data-category="pond">
-        <img src="images/gallery-5.jpg" alt="Pond construction" loading="lazy" />
-        <div class="overlay">View</div>
-      </div>
-
-      <div class="gallery-item" data-category="driveway">
-        <img src="images/gallery-6.jpg" alt="Driveway construction" loading="lazy" />
-        <div class="overlay">View</div>
-      </div>
-
-      <div class="gallery-item" data-category="clearing">
-        <img src="images/gallery-7.jpg" alt="Land clearing before and after" loading="lazy" />
-        <div class="overlay">View</div>
-      </div>
-
-      <div class="gallery-item" data-category="pond">
-        <img src="images/gallery-8.jpg" alt="Pond clean-out project" loading="lazy" />
-        <div class="overlay">View</div>
-      </div>
-
-      <div class="gallery-item" data-category="grading">
-        <img src="images/gallery-9.jpg" alt="Yard grading and drainage" loading="lazy" />
-        <div class="overlay">View</div>
-      </div>
-
-      <div class="gallery-item" data-category="excavation">
-        <img src="images/gallery-10.jpg" alt="Excavation and trenching" loading="lazy" />
-        <div class="overlay">View</div>
-      </div>
-
-      <div class="gallery-item" data-category="driveway">
-        <img src="images/gallery-11.jpg" alt="Gravel driveway project" loading="lazy" />
-        <div class="overlay">View</div>
-      </div>
-
-      <div class="gallery-item" data-category="excavation">
-        <img src="images/gallery-12.jpg" alt="Foundation excavation" loading="lazy" />
-        <div class="overlay">View</div>
-      </div>
-
+  <div class="gallery-grid">
     </div>
 
-    <!-- Add photos notice -->
-    <div style="margin-top: 2.5rem; padding: 1.5rem; background: var(--bg-2); border: 1px dashed var(--border); border-left: 4px solid var(--gold); display: none;" id="addPhotosNote">
-      <p style="color: var(--text-muted); font-size: 0.9rem;">
-        <strong style="color: var(--gold);">Photo Tip:</strong>
-        Place your photo files in the <code style="background:var(--bg-3); padding: 2px 6px;">images/</code> folder and update the filenames in <code style="background:var(--bg-3); padding: 2px 6px;">gallery.html</code>.
-      </p>
-    </div>
-  </section>
-
-  <!-- LIGHTBOX -->
-  <div class="lightbox" id="lightbox">
+  <div id="galleryLightbox" class="lightbox">
     <button class="lightbox-close" id="lightboxClose">&times;</button>
-    <img src="" alt="Gallery photo" id="lightboxImg" />
+    <button class="lightbox-arrow left-arrow" id="prevBtn">&#10094;</button>
+    <img src="" alt="Full Size View" id="lightboxImg">
+    <button class="lightbox-arrow right-arrow" id="nextBtn">&#10095;</button>
   </div>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-grid">
       <div class="footer-brand">
