@@ -126,14 +126,22 @@ nav {
   height: 68px;
 }
 
+/* Updated to place logo image and text side-by-side */
 .nav-logo {
   font-family: 'Black Han Sans', sans-serif;
   font-size: 1.25rem;
   color: var(--text);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  line-height: 1.1;
+}
+
+/* New block: Keeps text stacked vertically next to the logo image */
+.nav-logo div {
   display: flex;
   flex-direction: column;
-  line-height: 1.1;
 }
 
 .nav-logo span {
@@ -142,6 +150,14 @@ nav {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--orange);
+}
+
+/* New block: Size rules to control the logo image frame nicely */
+.logo-img {
+  height: 45px;       
+  width: auto;        
+  object-fit: contain;
+  display: block;
 }
 
 .nav-links {
@@ -174,7 +190,7 @@ nav {
   background: none;
   border: none;
   cursor: pointer;
-  display: none; /* Controlled by responsive media queries */
+  display: none; /* Controlled by responsive media queries further down your sheet */
   flex-direction: column;
   gap: 6px;
   z-index: 100;
@@ -227,6 +243,13 @@ nav {
   border-bottom: 1px solid var(--border);
 }
 .mobile-nav a:hover { color: var(--orange); }
+
+/* Mobile logo scaling safety check */
+@media (max-width: 768px) {
+  .logo-img {
+    height: 38px;
+  }
+}
 
 /* ==========================================================================
    PAGE SECTIONS & WIDGETS
@@ -415,8 +438,8 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1rem;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .gallery-item {
